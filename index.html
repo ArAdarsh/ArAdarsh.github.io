@@ -1,184 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adarsh Remesh | Architect & Designer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Helvetica+Neue:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #0d0a0a;
-      --primary: #e0c097;
-      --text-light: #f3f0ec;
-      --transition: all 1s ease;
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background: var(--bg);
-      color: var(--text-light);
-      overflow-x: hidden;
-    }
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      display: flex;
-      justify-content: flex-end;
-      padding: 1rem 2rem;
-      z-index: 100;
-    }
-    nav a {
-      margin-left: 2rem;
-      text-decoration: none;
-      color: var(--text-light);
-      font-weight: 400;
-      transition: var(--transition);
-    }
-    nav a:hover {
-      color: var(--primary);
-    }
-    .section {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      padding: 2rem;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: var(--transition);
-    }
-    .section.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    h1, h2, h3 {
-      font-family: 'Playfair Display', serif;
-      color: var(--primary);
-      margin: 0.5rem 0;
-    }
-    h1 { font-size: 3rem; }
-    h2 { font-size: 2rem; }
-    p { max-width: 600px; line-height: 1.6; }
-    .profile-hero {
-      background: url('hero.jpg') center/cover no-repeat;
-      width: 100%; height: 100vh;
-      position: relative;
-      color: var(--primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-    .profile-hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: rgba(13,10,10,0.7);
-    }
-    .profile-hero .content {
-      position: relative;
-      z-index: 1;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #555;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adarsh Remesh | Architect & Designer</title>
+    
+    <!-- Link to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&family=Futura&display=swap" rel="stylesheet">
+    
+    <!-- Link to the CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Defer JS for faster page load -->
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <nav>
-    <a href="#hero">Home</a>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#experience">Experience</a>
-    <a href="#achievements">Achievements</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="hero" class="profile-hero section">
-    <div class="content">
-      <h1>Adarsh Remesh</h1>
-      <h2>Architect &amp; Designer</h2>
-      <p>“As an architect, you design for the present, with an awareness of the past, for a future which is essentially unknown.”</p>
+    
+      <!-- ============================================= -->
+    <!-- PRE-LOADER                                    -->
+    <!-- ============================================= -->
+    <div id="preloader">
+        <div class="preloader-logo">Ar.</div>
     </div>
-  </section>
 
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>I am a final-year Bachelor of Architecture student at the School of Planning and Architecture, New Delhi. I approach each project with a deep appreciation of context, history, and sustainability, striving to create environments that are meaningful, functional, and enduring.</p>
-  </section>
+    <!-- ============================================= -->
+    <!-- HEADER & NAVIGATION                           -->
+    <!-- ============================================= -->
+    <header class="header">
+        <nav class="header__nav container">
+            <a href="#" class="header__logo">Ar.</a>
+            <div class="header__menu">
+                <ul class="header__menu-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                </ul>
+                <a href="#contact" class="btn">Let’s talk</a>
+            </div>
+            <button class="header__toggle" aria-label="toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
 
-  <section id="education" class="section">
-    <h2>Education</h2>
-    <p><strong>2020 &ndash; 2025</strong><br> Bachelor of Architecture<br> School of Planning and Architecture, New Delhi</p>
-  </section>
+    <main>
 
-  <section id="experience" class="section">
-    <h2>Professional Experience</h2>
-    <p><strong>Architectural Intern</strong> &mdash; Studio Lotus, New Delhi (6 months, 2024)<br>
-       Gained expertise in professional conduct, detailed working drawings, advanced rendering, and graphical presentation.</p>
-    <p><strong>General President</strong> &mdash; Executive Student Council, SPA New Delhi (1 year, 2023)<br>
-       Provided leadership, organized academic and cultural events, and mediated student-faculty collaboration.</p>
-    <p><strong>BIM Assistant</strong> &mdash; Ministry of Human Resource Development (2022–2025)<br>
-       Contributed to two residential BIM projects, developing detailed scheduling and modeling workflows.</p>
-    <p><strong>Freelance 3D &amp; Interior Rendering</strong> (2023)<br>
-       Delivered high-fidelity visualizations to support design decision-making.</p>
-  </section>
+        <!-- ============================================= -->
+        <!-- HERO SECTION                                  -->
+        <!-- ============================================= -->
+        <section id="about" class="hero container">
+            <img src="https://placehold.co/702x613/1E1E1E/DAC5A7?text=Image" alt="Abstract geometric design" class="hero__image">
+            <div class="hero__monogram">Ar.</div>
+            <div class="hero__text-content">
+                <h1 class="hero__title">Adarsh<br>Remesh</h1>
+                <p class="hero__subtitle">
+                    A budding 21st-century Architect/Designer interested in implementing technology for better output.
+                </p>
+            </div>
+        </section>
 
-  <section id="achievements" class="section">
-    <h2>Selected Achievements</h2>
-    <ul>
-      <li>Top 20, Annual NASA Design Competition (Senior Advisor, 2024)</li>
-      <li>Top 10, GRIHA Trophy (Senior Advisor, 2023)</li>
-      <li>Top 15, Solar Decathlon India (Energy Optimization Lead, 2023)</li>
-      <li>Top 30, HUDCO Competition (Participant, 2022)</li>
-      <li>Top 50, Re:School Volume Zero (Participant, 2021)</li>
-    </ul>
-  </section>
+        <!-- ============================================= -->
+        <!-- PORTFOLIO LINKS SECTION                       -->
+        <!-- ============================================= -->
+        <section id="portfolio" class="portfolio-links container">
+            <a href="#" class="portfolio-card">
+                <h2>Portfolio 2025</h2>
+            </a>
+            <a href="#" class="portfolio-card">
+                <h2>Portfolio 2023</h2>
+            </a>
+        </section>
+        
+        <!-- ============================================= -->
+        <!-- RESUME SECTION                                -->
+        <!-- ============================================= -->
+        <section id="resume" class="resume-grid container">
+            <!-- Education Card -->
+            <div class="resume-card">
+                <span class="resume-card__number">01</span>
+                <h3 class="resume-card__title">Education</h3>
+                <ul class="resume-card__list">
+                    <li>
+                        <span class="item__year">2020-25</span>
+                        <p class="item__title">Bachelors of Architecture</p>
+                        <p class="item__detail">School of Planning and Architecture, New Delhi - 8 CGPA</p>
+                    </li>
+                    <li>
+                        <span class="item__year">2019</span>
+                        <p class="item__title">Higher Secondary - Computer Science</p>
+                        <p class="item__detail">Govt Vocational Higher Secondary, Payyoli - 94.25%</p>
+                    </li>
+                </ul>
+            </div>
 
-  <section id="skills" class="section">
-    <h2>Technical Skills</h2>
-    <p><strong>Design & Drafting:</strong> AutoCAD, Rhino, SketchUp, Blender</p>
-    <p><strong>BIM & Modeling:</strong> Revit (Certified User), Grasshopper, Autodesk Forma</p>
-    <p><strong>Rendering & Visualization:</strong> V-Ray, Twinmotion, Enscape, Unreal Engine</p>
-    <p><strong>Environmental Analysis:</strong> Ladybug, Honeybee, Climate Studio, Insight 360</p>
-    <p><strong>AI & Graphics:</strong> Midjourney, LookX, Leonardo, Adobe Suite</p>
-  </section>
+            <!-- Experience Card -->
+            <div class="resume-card">
+                <span class="resume-card__number">02</span>
+                <h3 class="resume-card__title">Experience</h3>
+                <ul class="resume-card__list">
+                    <li>
+                        <span class="item__year">2024</span>
+                        <p class="item__title">Architectural Internship - Studio Lotus, New Delhi</p>
+                        <p class="item__detail">6 months. Learned professional conduct, working drawings, rendering, and graphical skills.</p>
+                    </li>
+                    <li>
+                        <span class="item__year">2023</span>
+                        <p class="item__title">General President, Executive Student Council</p>
+                        <p class="item__detail">1 year. Gained professional exposure, organized college events, and developed leadership skills.</p>
+                    </li>
+                    <li>
+                        <span class="item__year">2022-25</span>
+                        <p class="item__title">Freelance - 3D Rendering and Interior Design</p>
+                        <p class="item__detail">Worked on multiple client projects focusing on visualization.</p>
+                    </li>
+                </ul>
+            </div>
 
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p><strong>Location:</strong> Calicut, Kerala, India</p>
-    <p><strong>Email:</strong> adarshramesh10@gmail.com</p>
-    <p><strong>Phone:</strong> +91-7356537479</p>
-    <p><strong>LinkedIn:</strong> adarsh-remesh-b88088203</p>
-  </section>
+            <!-- Achievements Card -->
+            <div class="resume-card resume-card--full-width">
+                 <span class="resume-card__number">03</span>
+                <h3 class="resume-card__title">Achievements</h3>
+                <ul class="resume-card__list">
+                    <li>
+                        <span class="item__year">2025</span>
+                        <p class="item__title">Top 20 - Annual NASA Design Competition (Senior Advisor)</p>
+                        <p class="item__detail">65th National Association of Students of Architecture convention.</p>
+                    </li>
+                     <li>
+                        <span class="item__year">2024</span>
+                        <p class="item__title">Top 10 - GRIHA Trophy (Senior Advisor)</p>
+                        <p class="item__detail">64th National Association of Students of Architecture convention.</p>
+                    </li>
+                    <li>
+                        <span class="item__year">2023</span>
+                        <p class="item__title">Top 15 - Solar Decathlon India 2023</p>
+                        <p class="item__detail">Led energy optimization and HVAC design for the educational division.</p>
+                    </li>
+                </ul>
+            </div>
 
-  <footer>
-    &copy; 2025 Adarsh Remesh. All rights reserved.
-  </footer>
+            <!-- Extra Curricular Card -->
+            <div class="resume-card resume-card--full-width">
+                 <span class="resume-card__number">04</span>
+                <h3 class="resume-card__title">Extra Curricular</h3>
+                <ul class="resume-card__list">
+                    <li>
+                        <span class="item__year">2025</span>
+                        <p class="item__title">Seminar: Universal and Inclusive Design Practices</p>
+                    </li>
+                     <li>
+                        <span class="item__year">2024</span>
+                        <p class="item__title">Elective: Artificial Intelligence and Machine Learning</p>
+                    </li>
+                    <li>
+                        <span class="item__year">2023</span>
+                        <p class="item__title">Utopia 2023 - Student President & Design Head</p>
+                    </li>
+                </ul>
+            </div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const sections = document.querySelectorAll('.section');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      }, { threshold: 0.2 });
-      sections.forEach(sec => observer.observe(sec));
-    });
-  </script>
+            <!-- Skills Card -->
+            <div class="resume-card resume-card--full-width">
+                <span class="resume-card__number">05</span>
+                <h3 class="resume-card__title">Skills</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">Revit</span>
+                    <span class="skill-tag">AutoCAD</span>
+                    <span class="skill-tag">SketchUp</span>
+                    <span class="skill-tag">Rhino</span>
+                    <span class="skill-tag">Grasshopper</span>
+                    <span class="skill-tag">BIM</span>
+                    <span class="skill-tag">V-Ray</span>
+                    <span class="skill-tag">Enscape</span>
+                    <span class="skill-tag">Adobe Photoshop</span>
+                    <span class="skill-tag">Adobe Illustrator</span>
+                    <span class="skill-tag">Energy Simulation</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================= -->
+        <!-- CALL TO ACTION (CTA) SECTION                  -->
+        <!-- ============================================= -->
+        <section id="contact" class="cta">
+            <div class="cta__banner">
+                <span>Let's talk +++ </span>
+                <span>Let's talk +++ </span>
+                <span>Let's talk +++ </span>
+                <span>Let's talk +++ </span>
+            </div>
+            <div class="cta__content container">
+                <p>Have an opportunity?</p>
+                <h2>Let's Have a Talk</h2>
+                <a href="mailto:adarsh.remesh@example.com" class="btn">Get in touch</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================= -->
+    <!-- FOOTER SECTION                                -->
+    <!-- ============================================= -->
+    <footer class="footer">
+        <div class="footer__content container">
+            <div class="footer__column footer__column--social">
+                <a href="#" class="footer__logo">Ar.</a>
+                <ul class="social-links">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Dribbble</a></li>
+                    <li><a href="#">Behance</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h4>Pages</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+             <div class="footer__column">
+                <h4>Contact</h4>
+                <p>Adarsh Remesh</p>
+                <p>New Delhi, India</p>
+                <a href="mailto:adarsh.remesh@example.com">adarsh.remesh@example.com</a>
+            </div>
+        </div>
+        <div class="footer__bottom container">
+            <p>© 2025 Made by Adarsh Remesh.</p>
+            <button class="footer__to-top">To Top &uarr;</button>
+        </div>
+    </footer>
+
 </body>
 </html>
