@@ -1,241 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adarsh Remesh | Architect & Designer</title>
-    
-    <!-- Link to Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&family=Futura&display=swap" rel="stylesheet">
-    
-    <!-- Link to the CSS stylesheet -->
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- Defer JS for faster page load -->
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adarsh Remesh - Architect & Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&family=Calibri:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/hero.css">
+  <link rel="stylesheet" href="styles/featured.css">
+  <link rel="stylesheet" href="styles/about.css">
+  <link rel="stylesheet" href="styles/contact.css">
+  <link rel="stylesheet" href="styles/footer.css">
 </head>
 <body>
-    
-      <!-- ============================================= -->
-    <!-- PRE-LOADER                                    -->
-    <!-- ============================================= -->
-    <div id="preloader">
-        <div class="preloader-logo">Ar.</div>
-    </div>
-
-    <!-- ============================================= -->
-    <!-- HEADER & NAVIGATION                           -->
-    <!-- ============================================= -->
+  <div class="main-container">
     <header class="header">
-        <nav class="header__nav container">
-            <a href="#" class="header__logo">Ar.</a>
-            <div class="header__menu">
-                <ul class="header__menu-list">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                </ul>
-                <a href="#contact" class="btn">Let’s talk</a>
-            </div>
-            <button class="header__toggle" aria-label="toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+      <div class="header-background"></div>
+      <div class="header-content">
+        <div class="logo">
+          <img src="icons/logo.png" alt="Adarsh Remesh Logo" class="logo-image">
+        </div>
+        <nav class="navigation">
+          <a href="About/index.html" class="nav-link">about</a>
+          <a href="Portfolio/index.html" class="nav-link">portfolio</a>
+          <!--><a href="#projects" class="nav-link">projects</a></!-->
         </nav>
+        <div class="cta-button">
+            <a href="mail-to:adarshramesh10@gmail.com" class="nav-link">
+          <span class="cta-text">Let's talk</span></a>
+        </div>
+      </div>
     </header>
 
     <main>
-
-        <!-- ============================================= -->
-        <!-- HERO SECTION                                  -->
-        <!-- ============================================= -->
-        <section id="about" class="hero container">
-            <img src="https://placehold.co/702x613/1E1E1E/DAC5A7?text=Image" alt="Abstract geometric design" class="hero__image">
-            <div class="hero__monogram">Ar.</div>
-            <div class="hero__text-content">
-                <h1 class="hero__title">Adarsh<br>Remesh</h1>
-                <p class="hero__subtitle">
-                    A budding 21st-century Architect/Designer interested in implementing technology for better output.
-                </p>
+      <section class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-initials">
+              <span class="initial-ar">Ar.</span>
             </div>
-        </section>
-
-        <!-- ============================================= -->
-        <!-- PORTFOLIO LINKS SECTION                       -->
-        <!-- ============================================= -->
-        <section id="portfolio" class="portfolio-links container">
-            <a href="#" class="portfolio-card">
-                <h2>Portfolio 2025</h2>
-            </a>
-            <a href="#" class="portfolio-card">
-                <h2>Portfolio 2023</h2>
-            </a>
-        </section>
-        
-        <!-- ============================================= -->
-        <!-- RESUME SECTION                                -->
-        <!-- ============================================= -->
-        <section id="resume" class="resume-grid container">
-            <!-- Education Card -->
-            <div class="resume-card">
-                <span class="resume-card__number">01</span>
-                <h3 class="resume-card__title">Education</h3>
-                <ul class="resume-card__list">
-                    <li>
-                        <span class="item__year">2020-25</span>
-                        <p class="item__title">Bachelors of Architecture</p>
-                        <p class="item__detail">School of Planning and Architecture, New Delhi - 8 CGPA</p>
-                    </li>
-                    <li>
-                        <span class="item__year">2019</span>
-                        <p class="item__title">Higher Secondary - Computer Science</p>
-                        <p class="item__detail">Govt Vocational Higher Secondary, Payyoli - 94.25%</p>
-                    </li>
-                </ul>
+            <h1 class="hero-name">Adarsh<br>Remesh</h1>
+            <p class="hero-description">A budding 21st century Architect / Designer who is interested in the implementation of technology for better output</p>
+            <div class="social-links">
+              <div class="social-item">
+                <img src="icons/insta.png" alt="Instagram" class="social-icon">
+                <span class="social-text">@Seidon_ar</span>
+              </div>
+              <div class="social-item">
+                <img src="icons/link.png" alt="LinkedIn" class="social-icon">
+                <span class="social-text">@adarsh-remesh-b88088203</span>
+              </div>
             </div>
+            <a href="portfolio/index.html"><div class="portfolio-button">
+              <span class="portfolio-text">PORTFOLIO</span>
+            </div></a>
+          </div>
+          <div class="hero-image">
+            <img src="images/h1_t.png" alt="Adarsh Remesh" class="hero-photo">
+          </div>
+        </div>
+      </section>
 
-            <!-- Experience Card -->
-            <div class="resume-card">
-                <span class="resume-card__number">02</span>
-                <h3 class="resume-card__title">Experience</h3>
-                <ul class="resume-card__list">
-                    <li>
-                        <span class="item__year">2024</span>
-                        <p class="item__title">Architectural Internship - Studio Lotus, New Delhi</p>
-                        <p class="item__detail">6 months. Learned professional conduct, working drawings, rendering, and graphical skills.</p>
-                    </li>
-                    <li>
-                        <span class="item__year">2023</span>
-                        <p class="item__title">General President, Executive Student Council</p>
-                        <p class="item__detail">1 year. Gained professional exposure, organized college events, and developed leadership skills.</p>
-                    </li>
-                    <li>
-                        <span class="item__year">2022-25</span>
-                        <p class="item__title">Freelance - 3D Rendering and Interior Design</p>
-                        <p class="item__detail">Worked on multiple client projects focusing on visualization.</p>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Achievements Card -->
-            <div class="resume-card resume-card--full-width">
-                 <span class="resume-card__number">03</span>
-                <h3 class="resume-card__title">Achievements</h3>
-                <ul class="resume-card__list">
-                    <li>
-                        <span class="item__year">2025</span>
-                        <p class="item__title">Top 20 - Annual NASA Design Competition (Senior Advisor)</p>
-                        <p class="item__detail">65th National Association of Students of Architecture convention.</p>
-                    </li>
-                     <li>
-                        <span class="item__year">2024</span>
-                        <p class="item__title">Top 10 - GRIHA Trophy (Senior Advisor)</p>
-                        <p class="item__detail">64th National Association of Students of Architecture convention.</p>
-                    </li>
-                    <li>
-                        <span class="item__year">2023</span>
-                        <p class="item__title">Top 15 - Solar Decathlon India 2023</p>
-                        <p class="item__detail">Led energy optimization and HVAC design for the educational division.</p>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Extra Curricular Card -->
-            <div class="resume-card resume-card--full-width">
-                 <span class="resume-card__number">04</span>
-                <h3 class="resume-card__title">Extra Curricular</h3>
-                <ul class="resume-card__list">
-                    <li>
-                        <span class="item__year">2025</span>
-                        <p class="item__title">Seminar: Universal and Inclusive Design Practices</p>
-                    </li>
-                     <li>
-                        <span class="item__year">2024</span>
-                        <p class="item__title">Elective: Artificial Intelligence and Machine Learning</p>
-                    </li>
-                    <li>
-                        <span class="item__year">2023</span>
-                        <p class="item__title">Utopia 2023 - Student President & Design Head</p>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Skills Card -->
-            <div class="resume-card resume-card--full-width">
-                <span class="resume-card__number">05</span>
-                <h3 class="resume-card__title">Skills</h3>
-                <div class="skills-container">
-                    <span class="skill-tag">Revit</span>
-                    <span class="skill-tag">AutoCAD</span>
-                    <span class="skill-tag">SketchUp</span>
-                    <span class="skill-tag">Rhino</span>
-                    <span class="skill-tag">Grasshopper</span>
-                    <span class="skill-tag">BIM</span>
-                    <span class="skill-tag">V-Ray</span>
-                    <span class="skill-tag">Enscape</span>
-                    <span class="skill-tag">Adobe Photoshop</span>
-                    <span class="skill-tag">Adobe Illustrator</span>
-                    <span class="skill-tag">Energy Simulation</span>
+      <section id="portfolio" class="featured-work">
+        <div class="section-content">
+          <h2 class="section-title">Featured Work</h2>
+          
+          <article class="project-showcase">
+            <div class="project-content">
+              <div class="project-description">
+                <p>The projects featured here reflect the diversity of my architectural journey—from immersive research-driven thesis work to built collaborations, competitions, and experimental design studies. Each project explores a unique intersection of place, program, and people, shaped by a consistent curiosity for sustainability, spatial storytelling, and meaningful user experience. Whether it's designing within sensitive ecosystems, revitalizing historic urban fabrics, or developing BIM-integrated housing solutions, these works represent not just solutions—but evolving questions I've asked as a young architect navigating complex contexts.</p>
+              </div>
+                                <span class="project-label">For more project</span>
+                                <div class="project-button">
+                  <span class="project-button-text">PROJECT</span>
                 </div>
             </div>
-        </section>
+            
 
-        <!-- ============================================= -->
-        <!-- CALL TO ACTION (CTA) SECTION                  -->
-        <!-- ============================================= -->
-        <section id="contact" class="cta">
-            <div class="cta__banner">
-                <span>Let's talk +++ </span>
-                <span>Let's talk +++ </span>
-                <span>Let's talk +++ </span>
-                <span>Let's talk +++ </span>
+          </article>
+
+          <article class="project-grid">
+
+             <div class="project-item">
+                             <img src="images/sa1.png" alt="Featured Project 1" class="project-image">
+              <div class="project-meta">
+                <h3 class="project-name">Sagar Aranya</h3>
+                <p class="project-details-text">Architectural Thesis 2025<br>Marine life research park</p>
+              </div>
             </div>
-            <div class="cta__content container">
-                <p>Have an opportunity?</p>
-                <h2>Let's Have a Talk</h2>
-                <a href="mailto:adarsh.remesh@example.com" class="btn">Get in touch</a>
+              
+              
+            <div class="project-item">
+              <img src="images/psl.png" alt="School of Leadership" class="project-image">
+              <div class="project-meta">
+                <h3 class="project-name">School of leadership</h3>
+                <p class="project-details-text">Internship work<br>Studio Lotus<br>Guide : Ar. Dev tyagi & Ar. Richa Singal</p>
+              </div>
             </div>
-        </section>
+            
+            <div class="project-item">
+            <img src="images/ud1.png" alt="Urban Design" class="project-image">
+            <div class="project-meta">
+                <h3 class="project-name">Urban Design</h3>
+                <p class="project-details-text">9th semester studio<br>Group of 4 :</p>
+                <p class="project-team">Karan Jain<br>Vishwal Ram Gowda<br>Shinde Shreyash Baliram</p>
+              </div>
+            </div>
+            
+            <div class="project-item">
+            <img src="images/andc1.png" alt="ANDC 2023" class="project-image">
+              <div class="project-meta">
+                <h3 class="project-name">ANDC 2023</h3>
+                <p class="project-details-text">National Association of Students of Architecture 2023<br>Top 20 in the nation<br>Coordinator<br>Group 35</p>
+              </div>
+
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="about-title">About me</h2>
+            <p class="about-description">I'm Adarsh Remesh, an architecture graduate from the School of Planning and Architecture, New Delhi. My design approach is grounded in empathy, rooted in context, and shaped by the cultures and climates I design for. Whether working on a marine life park along Kerala's fragile coast, developing tribal knowledge hubs in remote villages, or contributing to large-scale institutional projects at Studio Lotus, I've always been drawn to architecture that resonates with people and place. My practice combines systems thinking, hands-on building logic, and a love for storytelling—across drawing, code, and craft. I'm currently seeking opportunities to collaborate with studios where design is both poetic and purposeful.</p>
+            <div class="about-button">
+              <span class="about-button-text">About</span>
+            </div>
+          </div>
+          <div class="about-image">
+            <img src="images/h_2.png" alt="About Adarsh Remesh" class="about-photo">
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="contact-banner">
+          <div class="banner-text">
+            <span class="banner-item">+++</span>
+            <span class="banner-item">Let's talk</span>
+            <span class="banner-item">+++</span>
+            <span class="banner-item">Let's talk</span>
+            <span class="banner-item">+++</span>
+            <span class="banner-item">Let's talk</span>
+            <span class="banner-item">+++</span>
+            <span class="banner-item">Let's talk</span>
+            <span class="banner-item">+++</span>
+            <span class="banner-item">Let's talk</span>
+            <span class="banner-item">+++</span>
+            <span class="banner-item">Let's talk</span>
+            <span class="banner-item">+++</span>
+            <span class="banner-item">Let's talk</span>
+            <span class="banner-item">+++</span>
+            <span class="banner-item">Let's talk</span>
+            <span class="banner-item">+++</span>
+            <span class="banner-item">Let's talk</span>
+            <span class="banner-item">+++</span>
+            <span class="banner-item">Let's talk</span>
+            <span class="banner-item">+++</span>
+            <span class="banner-item">Let's talk</span>
+            <span class="banner-item">+++</span>
+          </div>
+        </div>
+        
+        <div class="contact-content">
+          <p class="contact-subtitle">opportunity IN HAND?</p>
+          <h2 class="contact-title">LETS HAVE A TALK</h2>
+          <div class="contact-button">
+            <span class="contact-button-text">Get in touch</span>
+            <div class="arrow-icon">
+              <img src="https://static.codia.ai/custom_image/2025-07-12/214037/arrow-icon.svg" alt="Arrow" class="arrow-image">
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- ============================================= -->
-    <!-- FOOTER SECTION                                -->
-    <!-- ============================================= -->
     <footer class="footer">
-        <div class="footer__content container">
-            <div class="footer__column footer__column--social">
-                <a href="#" class="footer__logo">Ar.</a>
-                <ul class="social-links">
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Dribbble</a></li>
-                    <li><a href="#">Behance</a></li>
-                </ul>
+      <div class="footer-content">
+        <div class="footer-main">
+          <div class="footer-section">
+            <h3 class="footer-title">Pages</h3>
+            <nav class="footer-nav">
+              <a href="#home" class="footer-link">Home</a>
+              <a href="#about" class="footer-link">About</a>
+              <a href="#portfolio" class="footer-link">portfolio</a>
+              <a href="#projects" class="footer-link">project</a>
+            </nav>
+          </div>
+          
+          <div class="footer-section">
+            <h3 class="footer-title">Adarsh Remesh</h3>
+            <div class="footer-social">
+              <div class="social-button">
+                <div class="social-icon-wrapper">
+                  <img src="icons/insta.png" alt="Instagram" class="footer-social-icon">
+                </div>
+              </div>
+              <span class="social-label">Instagram</span>
             </div>
-            <div class="footer__column">
-                <h4>Pages</h4>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-             <div class="footer__column">
-                <h4>Contact</h4>
-                <p>Adarsh Remesh</p>
-                <p>New Delhi, India</p>
-                <a href="mailto:adarsh.remesh@example.com">adarsh.remesh@example.com</a>
-            </div>
+          </div>
         </div>
-        <div class="footer__bottom container">
-            <p>© 2025 Made by Adarsh Remesh.</p>
-            <button class="footer__to-top">To Top &uarr;</button>
+        
+        <div class="footer-bottom">
+          <p class="copyright">© 2025 Made by Adarsh Remesh. Powered by Github/Dino</p>
+          <div class="back-to-top">
+            <span class="back-to-top-text">To Top</span>
+            <div class="back-to-top-button">
+              <img src="https://static.codia.ai/custom_image/2025-07-12/214037/download-icon.svg" alt="Back to top" class="back-to-top-icon">
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
+  </div>
 
+  <script src="scripts/main.js"></script>
+  <script src="scripts/navigation.js"></script>
+  <script src="scripts/animations.js"></script>
 </body>
 </html>

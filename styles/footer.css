@@ -1,0 +1,238 @@
+.footer {
+  position: relative;
+  background: var(--overlay-light);
+  padding: 51px 0 110px;
+}
+
+.footer-content {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 160px;
+}
+
+.footer-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 80px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-title {
+  font-family: var(--roboto-mono);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--primary-black);
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-link {
+  font-family: var(--calibri);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20.8px;
+  color: var(--text-gray);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: var(--primary-black);
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  background: var(--backdrop-color);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  backdrop-filter: blur(15px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social-button:hover {
+  background: var(--overlay-black);
+  transform: translateY(-2px);
+}
+
+.social-button:hover .footer-social-icon {
+  filter: brightness(0) invert(1);
+}
+
+.social-icon-wrapper {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social-icon {
+  width: 12.25px;
+  height: 12.25px;
+  object-fit: contain;
+}
+
+.social-label {
+  font-family: var(--calibri);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20.8px;
+  color: var(--text-gray);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid var(--primary-black);
+}
+
+.copyright {
+  font-family: var(--calibri);
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 21.6px;
+  color: var(--text-gray);
+  letter-spacing: 0.5px;
+  max-width: 1398px;
+}
+
+.back-to-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.back-to-top-text {
+  font-family: var(--calibri);
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20.8px;
+  color: var(--primary-black);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.back-to-top-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  background: var(--backdrop-color);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  backdrop-filter: blur(15px);
+  transition: all 0.3s ease;
+}
+
+.back-to-top-button:hover {
+  background: var(--overlay-black);
+  transform: translateY(-2px);
+}
+
+.back-to-top-button:hover .back-to-top-icon {
+  filter: brightness(0) invert(1);
+}
+
+.back-to-top-icon {
+  width: 12.183px;
+  height: 14.688px;
+  object-fit: contain;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .footer-content {
+    padding: 0 60px;
+  }
+  
+  .footer-main {
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 60px;
+  }
+  
+  .footer-content {
+    padding: 0 30px;
+  }
+  
+  .footer-main {
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .footer-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  .footer-link,
+  .social-label,
+  .back-to-top-text {
+    font-size: 12px;
+  }
+  
+  .copyright {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    padding: 0 20px;
+  }
+  
+  .footer-title {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  .social-button,
+  .back-to-top-button {
+    width: 36px;
+    height: 36px;
+  }
+}

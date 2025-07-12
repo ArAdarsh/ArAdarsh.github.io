@@ -1,0 +1,151 @@
+.header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  z-index: 1000;
+}
+
+.header-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url(https://static.codia.ai/custom_image/2025-07-12/214037/header-background.png) no-repeat center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.header-content{
+  position: relative;
+  max-width: 1820px;
+  margin: 0 auto;
+  padding: 0 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  position: relative;
+  z-index: 101;
+}
+
+.logo-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 95;
+}
+
+.nav-link {
+  color: var(--primary-black);
+  font-family: var(--roboto-mono);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20.8px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: burlywood;
+}
+
+.cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 16px;
+  background: var(--overlay-black);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 99;
+}
+
+.cta-button:hover {
+  background: burlywood;
+  transform: translateY(-2px);
+}
+
+.cta-text {
+  color: var(--primary-white);
+  font-family: var(--roboto-mono);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20.8px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Mobile Navigation */
+@media (max-width: 1024px) {
+  .header-content {
+    padding: 0 30px;
+  }
+  
+  .navigation {
+    position: static;
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    padding: 0 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .logo-image {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .navigation {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .nav-link {
+    font-size: 12px;
+  }
+  
+  .cta-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-content {
+    padding: 0 16px;
+  }
+  
+  .logo-image {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .navigation {
+    gap: 15px;
+  }
+  
+  .nav-link {
+    font-size: 11px;
+  }
+}
